@@ -1,0 +1,107 @@
+import { Search, MousePointerClick, Share2, Bot, Magnet, Clapperboard, Sparkles, Compass, type LucideIcon } from 'lucide-react'
+
+export const CONTACT = {
+  phone: '9025804482',
+  email: 'Digivianora@gmail.com',
+  instagram: 'https://www.instagram.com/Vianora_2026',
+  facebook: 'https://www.facebook.com/Vianora',
+}
+export const WHATSAPP = (import.meta.env.VITE_WHATSAPP_NUMBER as string | undefined)?.replace(/\D/g, '')
+
+export interface Service {
+  slug: string; title: string; icon: LucideIcon; short: string; hero: string
+  what: string; why: string; help: string[]; benefit: string; challenges: string[]; faqs: [string, string][]
+}
+
+export const services: Service[] = [
+  { slug: 'google-ads', title: 'Google Ads and PPC Advertising', icon: MousePointerClick,
+    short: 'Reach people who are already searching for what you offer.',
+    hero: 'Be Visible When Customers Search for What You Offer.',
+    what: 'Search advertising places your business in front of people actively looking for your products or services. Vianora plans keyword targeting, sets up campaigns and tracks the actions that matter to you.',
+    why: 'Without clear targeting and tracking, ad budgets can be spent on clicks that never become enquiries.',
+    help: ['Keyword research and targeting', 'Search campaign setup', 'Conversion tracking setup', 'Ongoing optimisation and reporting'],
+    benefit: 'Potential benefits include more relevant traffic and a clearer view of which ads lead to enquiries.',
+    challenges: ['Rising cost per click', 'Traffic that does not turn into enquiries', 'No clear view of what ads deliver'],
+    faqs: [['Do you manage Google Ads campaigns?', 'Yes. Vianora can plan, set up and optimise Google Ads campaigns based on the scope we agree with you.'], ['Can you track enquiries from ads?', 'Conversion tracking is part of campaign setup, so you can see which campaigns lead to form submissions or calls.']] },
+  { slug: 'meta-ads', title: 'Meta Ads: Facebook and Instagram', icon: Share2,
+    short: 'Reach the right audiences on Facebook and Instagram.',
+    hero: 'Put Your Business in Front of the Right Audience on Facebook and Instagram.',
+    what: 'Meta advertising lets you reach defined audiences with image, video and lead-form ads across Facebook and Instagram.',
+    why: 'Social platforms are crowded. Clear audiences and strong creatives help your message stand out.',
+    help: ['Audience targeting', 'Campaign creatives and copy', 'Retargeting where appropriate', 'Campaign optimisation and reporting'],
+    benefit: 'Potential benefits include greater brand awareness and a steady flow of enquiries from suitable audiences.',
+    challenges: ['Ads that reach the wrong people', 'Creatives that fatigue quickly', 'Unclear results across campaigns'],
+    faqs: [['Do you provide Facebook and Instagram advertising?', 'Yes. We plan, create and manage campaigns for both platforms.'], ['Do you create the ad creatives?', 'Creative preparation can be included in the scope we agree with you.']] },
+  { slug: 'seo', title: 'Search Engine Optimisation (SEO)', icon: Search,
+    short: 'Improve organic visibility so customers can find you.',
+    hero: 'Help Customers Find You Without Paying for Every Click.',
+    what: 'SEO improves how your website appears in search results through keyword research, on-page work, technical fundamentals and content.',
+    why: 'If your site is hard for search engines to understand, potential customers may never see it.',
+    help: ['Keyword research', 'On-page SEO', 'Technical SEO fundamentals', 'Content optimisation'],
+    benefit: 'Potential benefits include stronger organic visibility over time. SEO is gradual, and rankings cannot be guaranteed.',
+    challenges: ['Pages that do not appear in search', 'Unclear keyword priorities', 'Slow or poorly structured websites'],
+    faqs: [['Do you offer SEO services?', 'Yes. We cover keyword research, on-page and technical SEO fundamentals and content optimisation.'], ['How long does SEO take?', 'Results build gradually. We will discuss realistic timeframes for your situation.']] },
+  { slug: 'ai-automation', title: 'AI Tools and Business Automation', icon: Bot,
+    short: 'Use suitable AI tools and workflows to save time.',
+    hero: 'Work Smarter With AI Tools and Automated Workflows.',
+    what: 'We help identify where suitable AI tools and workflow automation can support productivity and your marketing processes.',
+    why: 'Repetitive tasks such as follow-ups, reporting and content drafts take time away from growing the business.',
+    help: ['Workflow review', 'Tool selection guidance', 'Automation of routine marketing tasks', 'Responsible-use guidelines'],
+    benefit: 'Potential benefits include time savings and more consistent processes.',
+    challenges: ['Manual, repetitive tasks', 'Unsure which tools are worth using', 'Disconnected systems'],
+    faqs: [['Is AI right for every business?', 'Not always. We start by reviewing your processes and recommend only what fits.'], ['Is my data safe with AI tools?', 'We encourage responsible use and will discuss data handling for each tool before it is adopted.']] },
+  { slug: 'lead-generation', title: 'Lead Generation', icon: Magnet,
+    short: 'Capture and follow up on qualified enquiries.',
+    hero: 'Turn Visitors Into Qualified Enquiries.',
+    what: 'Lead generation combines landing pages, forms and conversion optimisation with a clear follow-up process.',
+    why: 'Traffic alone is not enough. Visitors need a clear path to get in touch.',
+    help: ['Lead capture and landing pages', 'Form design and optimisation', 'Conversion improvements', 'Lead follow-up workflows'],
+    benefit: 'Potential benefits include more qualified enquiries and less lost interest. Specific lead numbers cannot be guaranteed.',
+    challenges: ['Visitors who leave without enquiring', 'Slow follow-up', 'Low-quality enquiries'],
+    faqs: [['How does your lead generation process work?', 'We understand your audience, build the capture path, drive suitable traffic and help you follow up on enquiries.'], ['Do you guarantee leads?', 'No. Results depend on many factors, and we focus on a well-built, measurable process.']] },
+  { slug: 'video-editing', title: 'Video Editing and Content Creation', icon: Clapperboard,
+    short: 'Short-form video and marketing content that holds attention.',
+    hero: 'Marketing Videos Built for Attention.',
+    what: 'We edit short-form videos, Reels and promotional videos, and produce marketing content that suits each platform.',
+    why: 'Video is a common way audiences discover and trust brands, but good editing takes time and skill.',
+    help: ['Short-form video and Reels editing', 'Promotional video editing', 'Marketing content production', 'Brand-consistent styling'],
+    benefit: 'Potential benefits include more engaging content and a consistent brand presence.',
+    challenges: ['No time to edit content', 'Inconsistent look across posts', 'Unsure what content works'],
+    faqs: [['Do you edit Reels?', 'Yes. Short-form video editing is part of this service.'], ['Do you shoot the footage?', 'This service covers editing and content production. Filming is only included if agreed in the proposal.']] },
+  { slug: 'brand-growth', title: 'Brand Growth and Digital Strategy', icon: Sparkles,
+    short: 'Build a clear, consistent and engaging brand presence.',
+    hero: 'Build a Brand People Recognise and Trust.',
+    what: 'We help define brand positioning and keep your digital presence, content and audience engagement consistent.',
+    why: 'An unclear or inconsistent brand makes it harder for customers to choose you.',
+    help: ['Brand positioning', 'Digital presence review', 'Content consistency planning', 'Audience engagement ideas'],
+    benefit: 'Potential benefits include a clearer message and stronger recognition over time.',
+    challenges: ['Unclear brand message', 'Inconsistent profiles and content', 'Low audience engagement'],
+    faqs: [['Is this a logo design service?', 'This service focuses on positioning, presence and content. Logo design is not included unless agreed.'], ['How is this different from marketing strategy?', 'Brand growth focuses on identity and presence; consulting covers the wider marketing plan.']] },
+  { slug: 'marketing-consulting', title: 'Marketing Strategy and Consulting', icon: Compass,
+    short: 'A clear plan built around your business goals.',
+    hero: 'A Marketing Plan Built Around Your Business Goals.',
+    what: 'We run business discovery, marketing audits and audience analysis, then develop a strategy and review performance.',
+    why: 'Marketing without a plan often spreads budget across channels without a clear purpose.',
+    help: ['Business discovery', 'Marketing audit', 'Audience analysis', 'Strategy development and performance review'],
+    benefit: 'Potential benefits include clearer priorities and more focused spending.',
+    challenges: ['No clear marketing plan', 'Unsure which channels to use', 'Hard to measure what works'],
+    faqs: [['How can digital marketing help my business?', 'It can raise visibility, reach the right audience and create a path for customers to enquire.'], ['How can I get started with Vianora?', 'Request a free consultation. We will discuss your goals and suggest next steps.']] },
+]
+
+export const industries: [string, string][] = [
+  ['Construction and Architecture', 'Showcase projects and attract clients searching for builders and designers.'],
+  ['Education and Training', 'Reach students and parents for courses, academies and institutions.'],
+  ['Healthcare and Professional Services', 'Build trust and visibility for clinics, consultants and advisers.'],
+  ['Retail and E-commerce', 'Bring shoppers to your store or online shop.'],
+  ['Startups and Small Businesses', 'Establish a presence and find early customers.'],
+  ['Local Service Businesses', 'Be found by people searching nearby.'],
+]
+export const industryOptions = [...industries.map(i => i[0]), 'Other']
+export const process: [string, string][] = [
+  ['Discover', 'Understand the business and its objectives.'],
+  ['Strategise', 'Develop a tailored marketing plan.'],
+  ['Create', 'Prepare campaigns, content and creatives.'],
+  ['Launch', 'Execute the agreed marketing strategy.'],
+  ['Optimise', 'Evaluate performance and improve campaigns.'],
+]
+export const goals = ['Generate more enquiries', 'Increase brand awareness', 'Improve search visibility', 'Launch a new product or service', 'Not sure yet']

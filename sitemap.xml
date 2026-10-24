@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace YOUR-DOMAIN with your production domain -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://YOUR-DOMAIN/</loc></url>
+  <url><loc>https://YOUR-DOMAIN/about</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/google-ads</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/meta-ads</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/seo</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/ai-automation</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/lead-generation</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/video-editing</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/brand-growth</loc></url>
+  <url><loc>https://YOUR-DOMAIN/services/marketing-consulting</loc></url>
+  <url><loc>https://YOUR-DOMAIN/reviews</loc></url>
+  <url><loc>https://YOUR-DOMAIN/contact</loc></url>
+  <url><loc>https://YOUR-DOMAIN/get-started</loc></url>
+  <url><loc>https://YOUR-DOMAIN/privacy-policy</loc></url>
+  <url><loc>https://YOUR-DOMAIN/terms</loc></url>
+</urlset>
